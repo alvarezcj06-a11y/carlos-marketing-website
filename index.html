@@ -73,6 +73,15 @@ h3{margin:0 0 8px;font-size:1.18rem}
 .blog h3{margin-top:30px}
 .blog p{color:#4e5a70}
 .quote{margin:26px 0;padding:18px 20px;border-left:4px solid var(--blue);background:#f6f9ff;border-radius:0 12px 12px 0;color:#41506b}
+.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.case{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 24px rgba(15,31,61,.04)}
+.case-label{display:inline-block;background:var(--blue2);color:var(--blue);font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:6px 10px;margin-bottom:14px}
+.case p{color:#4e5a70;margin:8px 0}
+.case strong{color:var(--navy)}
+.evidence-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.evidence{background:#f8faff;border:1px solid #dbe5f8;border-radius:14px;padding:16px}
+.evidence strong{display:block;color:var(--navy);margin-bottom:4px}
+.evidence span{color:var(--muted);font-size:.93rem}
 .contact-box{background:var(--navy);color:#fff;border-radius:24px;padding:30px}
 .contact-box h2{color:#fff}
 .contact-box p{color:#d7e0f2}
@@ -86,12 +95,12 @@ footer p{margin:0}
 .small{font-size:.9rem}
 @media(max-width:900px){
   .hero-grid,.two-col{grid-template-columns:1fr}
-  .grid3{grid-template-columns:1fr 1fr}
+  .grid3,.proof-grid{grid-template-columns:1fr 1fr}
   .process{grid-template-columns:1fr 1fr}
 }
 @media(max-width:700px){
   .nav{align-items:flex-start;flex-direction:column;padding:14px 0}
-  .cred,.grid3{grid-template-columns:1fr}
+  .cred,.grid3,.proof-grid,.evidence-row{grid-template-columns:1fr}
   .cred{margin-top:0}
   .hero{padding-top:54px}
   .contact-form{grid-template-columns:1fr}
@@ -116,6 +125,7 @@ footer p{margin:0}
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
+      <a href="#proof">Proof</a>
       <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -128,12 +138,12 @@ footer p{margin:0}
     <div>
       <div class="kicker">Personal Marketing & Sales Portfolio</div>
       <h1>Clear communication. Better customer experience.</h1>
-      <p class="lead">I’m Carlos Alvarez, a marketing student with sales experience at Spectrum. This portfolio shows how I think about customers, communication, digital marketing, and simple website design.</p>
+      <p class="lead">I’m Carlos Alvarez, a marketing student with sales experience at Spectrum. I focus on customer communication, digital marketing, and website planning. My mix of class projects and real customer experience helps me keep marketing clear, useful, and easy to understand.</p>
       <div class="actions">
         <a class="btn primary" href="#experience">View My Experience</a>
-        <a class="btn secondary" href="#blog">Read My Blog</a>
+        <a class="btn secondary" href="#proof">See Work Examples</a>
       </div>
-      <p class="hero-note">Focused on customer needs, clear messaging, and making information easier to understand.</p>
+      <p class="hero-note">What I offer: a customer-first approach to marketing, sales communication, and simple website experiences.</p>
     </div>
 
     <div class="visual" aria-label="Original marketing and customer experience graphic">
@@ -301,7 +311,42 @@ footer p{margin:0}
   </div>
 </section>
 
-<section class="section alt" id="blog">
+
+<section class="section alt" id="proof">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Proof & Examples</div>
+      <h2>Real examples of how I use these skills.</h2>
+      <p class="lead">Instead of using made-up testimonials or awards, I use real experience and project examples to show what I have learned and how I approach customers and websites.</p>
+    </div>
+
+    <div class="proof-grid">
+      <article class="case">
+        <span class="case-label">Sales Example</span>
+        <h3>Spectrum customer conversation</h3>
+        <p><strong>Situation:</strong> A customer needs help understanding internet choices and does not want a complicated sales pitch.</p>
+        <p><strong>My approach:</strong> I ask what they use the internet for, explain the differences between options in simple language, answer questions, and help them compare what fits their needs.</p>
+        <p><strong>What it shows:</strong> Customer communication, listening, product knowledge, and building trust during a real sales conversation.</p>
+      </article>
+
+      <article class="case">
+        <span class="case-label">Website Example</span>
+        <h3>Personal marketing portfolio project</h3>
+        <p><strong>Goal:</strong> Build a website that clearly explains my background, skills, and experience without making visitors search for the main information.</p>
+        <p><strong>My approach:</strong> I used clear headings, simple navigation, visible buttons, an original customer-journey visual, a mobile-friendly layout, and a blog that supports the website’s focus.</p>
+        <p><strong>What it shows:</strong> Website planning, digital marketing, content organization, visual hierarchy, calls to action, and user experience.</p>
+      </article>
+    </div>
+
+    <div class="evidence-row" aria-label="Credibility evidence">
+      <div class="evidence"><strong>Real Sales Experience</strong><span>Customer-facing residential sales work at Spectrum.</span></div>
+      <div class="evidence"><strong>Marketing Projects</strong><span>Hands-on class work involving websites, content, customer journeys, and digital marketing.</span></div>
+      <div class="evidence"><strong>Original Work Sample</strong><span>The customer-focused marketing visual and website structure were created for this portfolio.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="blog">
   <div class="container blog">
     <div class="kicker">Blog</div>
     <h2>5 simple website tips that make a page easier to use</h2>
@@ -326,7 +371,7 @@ footer p{margin:0}
   </div>
 </section>
 
-<section class="section" id="contact">
+<section class="section alt" id="contact">
   <div class="container">
     <div class="contact-box">
       <div class="kicker" style="color:#d7a83c">Contact</div>
