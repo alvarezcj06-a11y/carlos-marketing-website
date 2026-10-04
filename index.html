@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Carlos Alvarez marketing portfolio with web design, content, and customer-focused ideas.">
+<title>Carlos Alvarez | Marketing Portfolio</title>
+<style>
+:root{--blue:#2457d6;--dark:#14213d;--light:#f5f7fb;--line:#dfe5ee;--text:#263247;--muted:#667085;--gold:#f4b942}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6;background:#fff}
+.container{width:min(1100px,calc(100% - 32px));margin:auto}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);z-index:10}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-weight:800;color:var(--dark);text-decoration:none;font-size:1.1rem}.brand span{color:var(--blue)}
+nav{display:flex;gap:8px;flex-wrap:wrap}nav a{color:var(--dark);text-decoration:none;font-weight:700;padding:9px 11px;border-radius:9px}nav a:hover{background:#eef3ff}
+.hero{padding:76px 0 56px;background:linear-gradient(180deg,#f7f9ff 0%,#fff 100%)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.tag{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+h1,h2,h3{color:var(--dark);line-height:1.15}h1{font-size:clamp(2.4rem,6vw,4.6rem);margin:.25rem 0 1rem}h2{font-size:clamp(1.8rem,4vw,2.7rem);margin:.3rem 0 1rem}h3{margin:.3rem 0 .6rem}
+.lead{font-size:1.12rem;color:#475467;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:11px;padding:12px 18px}.primary{background:var(--blue);color:#fff}.secondary{border:1px solid #9fb2dd;color:var(--dark);background:#fff}
+.visual{background:#10254f;border-radius:24px;padding:22px;box-shadow:0 20px 50px rgba(20,33,61,.12)}
+.visual svg{width:100%;height:auto;display:block}
+.section{padding:68px 0}.alt{background:var(--light)}.intro{max-width:720px;margin-bottom:28px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.alt .card{background:#fff}
+.num{width:38px;height:38px;border-radius:10px;background:#eaf0ff;color:var(--blue);display:grid;place-items:center;font-weight:900;margin-bottom:14px}
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:-20px;position:relative}.proof div{background:#fff;padding:20px}.proof strong{display:block;color:var(--dark)}.proof span{color:var(--muted);font-size:.94rem}
+.blog{max-width:800px}.blog h3{margin-top:28px}.blog p{color:#475467}
+.contact-box{background:#10254f;color:#fff;border-radius:22px;padding:28px}.contact-box h2{color:#fff}.contact-box p{color:#d7e0f2}.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.contact-form input,.contact-form textarea{width:100%;padding:12px;border-radius:9px;border:1px solid #c7d0de;font:inherit}.contact-form textarea{grid-column:1/-1;min-height:110px}.contact-form button{grid-column:1/-1;border:0;cursor:pointer}.status{margin:.7rem 0 0;font-weight:700}
+footer{padding:28px 0;background:#0b1730;color:#cbd5e1}footer p{margin:0}.small{font-size:.9rem}
+@media(max-width:800px){.hero-grid,.grid3,.proof{grid-template-columns:1fr}.hero{padding-top:52px}.proof{margin-top:0}.nav{align-items:flex-start;flex-direction:column;padding:14px 0}.contact-form{grid-template-columns:1fr}.contact-form textarea,.contact-form button{grid-column:1}}
+@media(max-width:520px){nav{gap:2px}nav a{padding:7px 8px;font-size:.92rem}.actions .btn{width:100%;text-align:center}.section{padding:50px 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">Carlos <span>Alvarez</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">What I Do</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="tag">Marketing Portfolio</div>
+      <h1>Simple marketing made with the customer in mind.</h1>
+      <p class="lead">I’m Carlos Alvarez, a marketing student. I made this website to show what I have learned about web design, content, and making a website easier for people to use.</p>
+      <div class="actions">
+        <a class="btn primary" href="#work">See What I Do</a>
+        <a class="btn secondary" href="#blog">Read My Blog</a>
+      </div>
+    </div>
+    <div class="visual" aria-label="Original website planning graphic">
+      <svg viewBox="0 0 620 420" role="img" aria-labelledby="vtitle vdesc">
+        <title id="vtitle">Website planning graphic</title>
+        <desc id="vdesc">A simple original graphic showing the path from message to trust to action.</desc>
+        <rect width="620" height="420" rx="24" fill="#ffffff"/>
+        <text x="40" y="58" font-family="Arial" font-size="24" font-weight="700" fill="#14213d">Simple Website Plan</text>
+        <rect x="40" y="90" width="540" height="72" rx="14" fill="#eef3ff"/>
+        <text x="62" y="120" font-family="Arial" font-size="13" fill="#667085">MAIN MESSAGE</text>
+        <text x="62" y="146" font-family="Arial" font-size="20" font-weight="700" fill="#2457d6">Make it clear right away</text>
+        <rect x="40" y="190" width="160" height="120" rx="14" fill="#f7f9fc" stroke="#dfe5ee"/>
+        <rect x="230" y="190" width="160" height="120" rx="14" fill="#f7f9fc" stroke="#dfe5ee"/>
+        <rect x="420" y="190" width="160" height="120" rx="14" fill="#f7f9fc" stroke="#dfe5ee"/>
+        <text x="66" y="226" font-family="Arial" font-size="15" font-weight="700" fill="#14213d">1. Understand</text>
+        <text x="255" y="226" font-family="Arial" font-size="15" font-weight="700" fill="#14213d">2. Trust</text>
+        <text x="446" y="226" font-family="Arial" font-size="15" font-weight="700" fill="#14213d">3. Act</text>
+        <text x="66" y="258" font-family="Arial" font-size="12" fill="#667085">Clear words</text>
+        <text x="255" y="258" font-family="Arial" font-size="12" fill="#667085">Real details</text>
+        <text x="446" y="258" font-family="Arial" font-size="12" fill="#667085">Easy button</text>
+        <path d="M120 340 H500" stroke="#2457d6" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="120" cy="340" r="11" fill="#f4b942"/><circle cx="310" cy="340" r="11" fill="#f4b942"/><circle cx="500" cy="340" r="11" fill="#f4b942"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="container proof" aria-label="Experience and credibility">
+  <div><strong>Marketing Student</strong><span>Learning digital marketing, customer behavior, and web design.</span></div>
+  <div><strong>Class Projects</strong><span>Practice with websites, content, and planning.</span></div>
+  <div><strong>Customer Experience</strong><span>Experience talking with customers and explaining services.</span></div>
+</div>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="intro">
+      <div class="tag">About Me</div>
+      <h2>I like marketing that is easy to understand.</h2>
+      <p class="lead">When I look at a website, I try to think like the person visiting it. They should know what the page is about, why it matters, and what they can do next without having to search around.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="work">
+  <div class="container">
+    <div class="intro">
+      <div class="tag">What I Do</div>
+      <h2>Three areas I focus on.</h2>
+      <p>I’m still learning, so these are the main skills I have been practicing in class and through customer experience.</p>
+    </div>
+    <div class="grid3">
+      <article class="card"><div class="num">1</div><h3>Website Planning</h3><p>Planning the sections, headlines, menu, and buttons so people can find what they need quickly.</p></article>
+      <article class="card"><div class="num">2</div><h3>Content & Messaging</h3><p>Turning long or confusing information into something simple and easier to read.</p></article>
+      <article class="card"><div class="num">3</div><h3>Customer View</h3><p>Looking at the website from the visitor’s point of view on both a computer and a phone.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="blog">
+  <div class="container blog">
+    <div class="tag">Blog</div>
+    <h2>5 simple website tips that make a page easier to use</h2>
+    <p class="lead">A website does not have to be complicated. A few simple choices can make it much easier for people to understand what a business or person is offering.</p>
+
+    <h3>1. Make the message clear at the top</h3>
+    <p>The first thing people see should tell them what the page is about. A clear title and short sentence can do a lot.</p>
+
+    <h3>2. Give people one clear next step</h3>
+    <p>Too many buttons can make a page confusing. One main button helps visitors know what to do next.</p>
+
+    <h3>3. Make important things easy to notice</h3>
+    <p>Headings, spacing, short sections, and simple design can help people scan the page without getting lost.</p>
+
+    <h3>4. Make sure it works on a phone</h3>
+    <p>A lot of people visit websites from their phones. Text, links, and buttons should still be easy to read and use on a smaller screen.</p>
+
+    <h3>5. Use real information to build trust</h3>
+    <p>Real experience, class projects, useful information, and clear contact options can make a website feel more trustworthy.</p>
+  </div>
+</section>
+
+<section class="section alt" id="contact">
+  <div class="container">
+    <div class="contact-box">
+      <div class="tag" style="color:#f4b942">Contact</div>
+      <h2>Have feedback or a project idea?</h2>
+      <p>This form is part of the class website demo. It shows a simple contact step without collecting or sending personal information.</p>
+      <form class="contact-form" id="contactForm">
+        <input aria-label="Name" placeholder="Name" required>
+        <input aria-label="Email" type="email" placeholder="Email" required>
+        <textarea aria-label="Message" placeholder="Message" required></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+      </form>
+      <p class="status" id="status" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <p><strong>Carlos Alvarez</strong> • Marketing Portfolio</p>
+    <p class="small">Student website project • <span id="year"></span></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('status').textContent = 'Thanks! This demo shows how the contact form would work.';
+  this.reset();
+});
+</script>
+</body>
+</html>
